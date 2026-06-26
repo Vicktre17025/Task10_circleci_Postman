@@ -13,12 +13,16 @@ jobs:
           command: npm ci
 
       - run:
-          name: Run Postman tests (Newman)
+          name: Prepare reports folder
+          command: mkdir -p reports
+
+      - run:
+          name: Run Postman API tests
           command: npm run api:test
 
       - store_artifacts:
-          path: newman-report.html
-          destination: postman-report
+          path: reports
+          destination: newman-report
 
 workflows:
   build-and-test:

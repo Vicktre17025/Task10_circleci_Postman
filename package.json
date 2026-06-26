@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "api:test": "newman run collections/api-tests.json -e environments/dev.json -r cli,html --reporter-html-export newman-report.html"
+    "prepare:reports": "mkdir -p reports",
+    "api:test": "newman run collections/api-tests.json -e environments/dev.json -r cli,html --reporter-html-export reports/newman-report.html"
   },
   "keywords": [],
   "author": "",
