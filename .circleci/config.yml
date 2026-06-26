@@ -1,0 +1,26 @@
+version: 2.1
+
+jobs:
+  api-tests:
+    docker:
+      - image: cimg/node:20.11
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install dependencies
+          command: npm ci
+
+      - run:
+          name: Run Postman tests (Newman)
+          command: npm run api:test
+
+      - store_artifacts:
+          path: newman-report.html
+          destination: postman-report
+
+workflows:
+  build-and-test:
+    jobs:
+      - api-tests

@@ -1,0 +1,34 @@
+{
+	"id": "d274549e-99d6-43ea-94b4-c3c4f1f9fa4c",
+	"name": "Environments_url",
+	"values": [
+		{
+			"key": "Base",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "base_url",
+			"value": "https://api.clickup.com/api/v2",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "space_id",
+			"value": "90121772320",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "folder_id",
+			"value": "901211627532",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"color": null,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-06-26T22:08:06.182Z",
+	"_postman_exported_using": "Postman/12.16.2"
+}
